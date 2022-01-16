@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8" />
+    <base href="">
     <title>Terms Of Use</title>
-    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
-    <script defer src="../render.js"></script>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
   </head>
-  <body style="font-size:1.2rem ">
-    <div style="padding-right:50px; padding-left:50px">
-    <img src="./image002.png"></a>
-    <br><br>
-    <h1>Terms Of Use</h1>
-    <br>
-    <p>
-    
-The Los Angeles County Regional Identification System (LACRIS) is responsible for countywide account management and access to the following law enforcement applications:
 
-</p>
-<p class="p"><b>
-<ul>
-  <li>Regional Photo System	Mobile Identification (MID)</li> 
-  <li>Automated Booking System (ABS)	Cal-Photo</li>
-  <li>Electronic Probably Cause Declaration (ePCD)</li>
-  <li>Multimodal Biometric Identification System (MBIS)</li>
-  <li>Criminal Booking System (CBS)	Justice Identity Manager (JIMS)</li>
-</ul>
-		
-</p></b>
-Per LACRIS Policy V 1.1 (revised 09/01/21), Users must follow the California Department of Justice’s (DOJ) Criminal Offender Record Information (CORI) laws (DOJ Information Bulletin 13-04-CJIS), DOJ’s Cal-Photo Policies Practices and Procedures (Cal-Photo PPP), as well as the FBI’s Criminal Justice Information Services (CJIS) Security Policy Version 5.9 (06/01/2020).
-<br>
-<ul>
-<li>1.	Searching criminal information shall be conducted on the “right to know” and the “need to know” basis only, while conducting official duties or functions.  The request must include a valid reason with each search (Tag number, File Number, Case Number, etc.).</li>
-<li>2.	All LACRIS systems are routinely audited for CORI compliance, CJIS security policies, and adherence to LACRIS policy.</li>
-<li>3.	All LACRIS systems are available to assist in investigations.  Probable cause is still required to effect an arrest.</li>
-<li>By signing this document, you agree to the LACRIS Terms of Use (TOU), Cal-DOJ CORI laws, Cal-Photo PPP, and FBI CJIS Security Policies.  Additionally, you agree to inform users under your command of these policies and laws and assist in enforcing them.   Any unauthorized access or misuse of these systems may result in disciplinary action ranging from access suspension to criminal prosecution, depending on the severity of the violation.</li>
-</ul>
-</p>
-<br><br><br>
-<label for="agree">I Agree:</label>
-<input type="checkbox" id="agree" name="agree" value="Yes">
-<br><br>
-<button type="button" id="continueBtn" name="continueBtn">Continue</button>
-<br>
-<button type="button" id="exitBtn" name="exitBtn">Logout</button>
-  </div>
+  <body>
+    <div class="container">
+      <img src="./assets/images/image002.png" alt=""></a>
+      <br><br>
+      <h1>Terms Of Use</h1>
+      <br>
+      <p>
 
+        The Los Angeles County Regional Identification System (LACRIS) is responsible for countywide account management and access to the
+        following law enforcement applications:
+
+      </p>
+      <p class="p"><b>
+          <ul>
+            <li>Regional Photo System Mobile Identification (MID)</li>
+            <li>Automated Booking System (ABS) Cal-Photo</li>
+            <li>Electronic Probably Cause Declaration (ePCD)</li>
+            <li>Multimodal Biometric Identification System (MBIS)</li>
+            <li>Criminal Booking System (CBS) Justice Identity Manager (JIMS)</li>
+          </ul>
+
+      </p></b>
+      Per LACRIS Policy V 1.1 (revised 09/01/21), Users must follow the California Department of Justice’s (DOJ) Criminal Offender Record
+      Information (CORI) laws (DOJ Information Bulletin 13-04-CJIS), DOJ’s Cal-Photo Policies Practices and Procedures (Cal-Photo PPP), as
+      well as the FBI’s Criminal Justice Information Services (CJIS) Security Policy Version 5.9 (06/01/2020).
+      <br>
+      <ul>
+        <li>1. Searching criminal information shall be conducted on the “right to know” and the “need to know” basis only, while conducting
+          official duties or functions. The request must include a valid reason with each search (Tag number, File Number, Case Number,
+          etc.).</li>
+        <li>2. All LACRIS systems are routinely audited for CORI compliance, CJIS security policies, and adherence to LACRIS policy.</li>
+        <li>3. All LACRIS systems are available to assist in investigations. Probable cause is still required to effect an arrest.</li>
+        <li>By signing this document, you agree to the LACRIS Terms of Use (TOU), Cal-DOJ CORI laws, Cal-Photo PPP, and FBI CJIS Security
+          Policies. Additionally, you agree to inform users under your command of these policies and laws and assist in enforcing them. Any
+          unauthorized access or misuse of these systems may result in disciplinary action ranging from access suspension to criminal
+          prosecution, depending on the severity of the violation.</li>
+      </ul>
+      </p>
+      <br><br><br>
+      <label for="agree">I Agree:</label>
+      <input type="checkbox" id="agree" name="agree" value="Yes">
+      <br><br>
+      <button type="button" id="continueBtn" name="continueBtn">Continue</button>
+      <br>
+      <button type="button" id="exitBtn" name="exitBtn">Logout</button>
+    </div>
+
+    <script src="./assets/js/renderer.js"></script>
   </body>
 
 </html>
